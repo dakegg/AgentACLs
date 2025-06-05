@@ -14,6 +14,6 @@ If there are a large number of delegated permissions, you can also provide the -
 
 The output from the command should display the service account name provided, along with a list of all permissions delegated at the OU specified with the **-OU** switch
 
-![image](https://github.com/user-attachments/assets/9962e689-f630-4685-b7ef-9a61f2a10cdb)
+![image](https://github.com/user-attachments/assets/bc89f3fb-044a-4af7-b27f-6e704aee045f)
 
 **NOTE**: It will show Inherited False because this is the top level of the forest, if you move down to any sub-OU in the directory you should see the same permissions and Inherited should be True.
