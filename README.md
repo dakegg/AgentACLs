@@ -1,6 +1,16 @@
 # AgentACLs
 Scripts to support the ACLing of AD service accounts for a Source AD management agent.
 
+**SETTING THE PERMISSIONS**
+
+Run the command Set-ServiceAccountPermissions.ps1 using the -Identity switch for the SamAccountName of the service account, and the -OU switch for the OU where writeback permissions need to be applied.  
+
+**NOTE**: It's recommended you apply the permissions at the TOP level of your forest (eg. DC=Contoso,DC=Com)
+
+![image](https://github.com/user-attachments/assets/1e99ae22-9e4b-4ee9-afd7-298ee3394fb5)
+
+** It's strongly recommended to wait 15+ minutes before running the test command below, to provide time for AD replication to complete.
+
 **TESTING THE NEW PERMISSIONS**
 
 Simply run the _Test-OUPermissions.ps1_ PowerShell script with the -OU command and provide an OU that you want to check as well as the SamAccountName of the service account to check.
