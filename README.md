@@ -18,3 +18,5 @@ The output from the command should display the service account name provided, al
 
 
 **NOTE**: It will show Inherited False because this is the top level of the forest, if you move down to any sub-OU in the directory you should see the same permissions and Inherited should be True.
+
+![image](https://github.com/user-attachments/assets/7818fb4c-2c4a-4bec-b40d-e7e8cbb07638)
