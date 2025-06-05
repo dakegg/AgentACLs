@@ -3,7 +3,7 @@ Scripts to support the ACLing of AD service accounts for a Source AD management 
 
 **TESTING THE NEW PERMISSIONS**
 
-Simply run the_ Test-OUPermissions.ps1 _PowerShell script with the -OU command and provide an OU that you want to check as well as the SamAccountName of the service account to check.
+Simply run the _Test-OUPermissions.ps1_ PowerShell script with the -OU command and provide an OU that you want to check as well as the SamAccountName of the service account to check.
 
 The output from the command should display the service account you provided, along with a list of all permissions delegated at the OU specified with the **-OU** switch
 
