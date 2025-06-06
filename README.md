@@ -26,13 +26,16 @@ The output from the command should display the service account you provided, alo
 
 **Note**: The Extended Rights for Replicating Directory Changes will not be present here, since those are only set at the top level and don't need to be applied to sub-OUs.
 
-TESTING THE NEW PERMISSIONS MANUALLY FROM THE GUI
+**TESTING THE NEW PERMISSIONS MANUALLY FROM THE GUI**
 
-Open Active Directory Users and Computers, right-click the Top level of the forest and choose Properties.  Select the Security tab and click the Advanced button.
+Open Active Directory Users and Computers, right-click the Top level of the forest and choose **Properties**.  Select the **Security** tab and click the **Advanced** button.
 
 ![image](https://github.com/user-attachments/assets/6accecf4-284c-4b26-8809-90012fc2b396)
 
-Select the Effective Access tab at the top of the screen, click Select A User and enter the SamAccountName of the service account, ensure that it shows up to the left of the Select A User hyperlink, then click the View Effective Access button at the bottom.
+Select the **Effective Access** tab at the top of the screen, click **Select A User** and enter the SamAccountName of the service account, ensure that it shows up to the left of the **Select A User** hyperlink, then click the **View Effective Access** button at the bottom.
 
 ![image](https://github.com/user-attachments/assets/e273c433-a15a-49d9-b164-5214f8ce5a64)
 
+Verify that the **List** and **Read** permissions are shown with a **Green** check, and all **Write** or **Delete** permissions should show a Red **X**.
+
+![image](https://github.com/user-attachments/assets/e7bf51bb-5e58-4036-894c-d02187a86f7b)
