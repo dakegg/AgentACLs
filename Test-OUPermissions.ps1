@@ -102,16 +102,16 @@ Process
 	{
 		Throw "It is necessary to run this command in an elevated PowerShell command prompt, please restart PowerShell in an elevated prompt and try again."
 	}
-	
+
+	if (!(Get-Module ActiveDirectory)) { try { Import-Module ActiveDirectory }
+		catch { throw "Unable to load the Active Directory PowerShell module, cannot continue!" }
+	}
+
 	# check for AD PSProvider on system first, if not there, report that this must run on a DC
 	Try { $CheckProvider = Get-PSProvider -PSProvider ActiveDirectory -ErrorAction Stop }
 	Catch
 	{
 		Throw "No Active Directory provider found on this system, make sure that you are running this script on a Domain Controller and with sufficient permissions."
-	}
-	
-	if (!(Get-Module ActiveDirectory)) { try { Import-Module ActiveDirectory }
-		catch { throw "Unable to load the Active Directory PowerShell module, cannot continue!" }
 	}
 	
 	If (!(Test-Path "AD:\$OU" -ErrorAction SilentlyContinue))
