@@ -3,7 +3,7 @@ Scripts to support the ACLing of AD service accounts for a Source AD management 
 
 **SETTING THE PERMISSIONS**
 
-Run the command Set-ServiceAccountPermissions.ps1 using the -Identity switch for the SamAccountName of the service account, and the -OU switch for the OU where writeback permissions need to be applied.  
+Run the command _Set-ServiceAccountPermissions.ps1_ using the -Identity switch for the SamAccountName of the service account, and the -OU switch for the OU where writeback permissions need to be applied.  
 
 **NOTE**: It's recommended you apply the permissions at the TOP level of your forest (eg. DC=Contoso,DC=Com)
 
